@@ -1,0 +1,29 @@
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Hoşgeldin <%= user.name %></p>
+<p class="lead mb-3">öneri ve şikayetlerinizi giriniz  </p>
+<a href="/users/logout" class="btn btn-secondary">logout</a>
+
+<form action="/users/login" method="POST">
+    <div class="form-group">
+      <label for="project">proje</label>
+      <input
+        type="project"
+        id="project"
+        name="project"
+        class="form-control"
+        placeholder="Enter project"
+      />
+    </div>
+    <div class="form-group">
+      <label for="durum">durum</label>
+      <input
+        type="durum"
+        id="durum"
+        name="durum"
+        class="form-control"
+        placeholder="Enter durum"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">gönder</button>
+  </form>
+
